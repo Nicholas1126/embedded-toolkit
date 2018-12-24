@@ -1,0 +1,11 @@
+prefix=/home/nicholas/sources/buildroot/output/host
+exec_prefix=/home/nicholas/sources/buildroot/output/host
+libdir=/home/nicholas/sources/buildroot/output/host/lib
+includedir=/home/nicholas/sources/buildroot/output/host/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.33.0
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid
