@@ -4,7 +4,7 @@
 # Script to give the appropriate compiler flags and linker flags
 # to use when building code that uses libpcap.
 #
-prefix="/usr/local"
+prefix="/home/nicholas/sources/embedded-toolkit/toolchains/aarch64-none-linux-gnu/host"
 exec_prefix="${prefix}"
 includedir="${prefix}/include"
 libdir="${exec_prefix}/lib"
