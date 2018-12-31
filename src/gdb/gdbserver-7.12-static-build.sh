@@ -45,7 +45,7 @@ make distclean 2>/dev/null
 # variables
 sed -i -e 's/srv_linux_thread_db=yes//' configure.srv
 # If you have issues with C++, use the following
-#./configure --host="$TOOLCHAIN_TARGET" --prefix="$SYSTEM_ROOT" --disable-build-with-cxx CXXFLAGS='-fPIC -static' CFLAGS='-fPIC -static'
-./configure --host="$TOOLCHAIN_TARGET" --prefix="$SYSTEM_ROOT" CXXFLAGS="-fPIC -static"
+./configure --host="$TOOLCHAIN_TARGET" --prefix="$SYSTEM_ROOT" --disable-build-with-cxx CXXFLAGS='-fPIC -static' CFLAGS='-fPIC -static'
+#./configure --host="$TOOLCHAIN_TARGET" --prefix="$SYSTEM_ROOT" CXXFLAGS="-fPIC -static"
 make -j gdbserver GDBSERVER_LIBS="$STDCXX_STATIC $GCCEH_STATIC"
 file gdbserver
